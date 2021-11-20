@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>FirstFit & BestFit Simulation</h1>
+      <div id="content">
+        <form action="">
+          <div class="label">Memory Block Size</div>
+          <input
+            type="text"
+            id="form__memoryblock"
+            placeholder="200, 300, 400"
+          />
+          <div class="label">Job Size</div>
+          <input type="text" id="form__jobsize" placeholder="400, 200, 350" />
+          <button class="simulate">Simulate</button>
+        </form>
+      </div>
+    </div>
+    <div class="table-container">
+      <table class="styled-table hidden first-fit__table">
+        <caption>
+          First Fit Algorithm
+        </caption>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Block Size</th>
+            <th>Job Size</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody class="tbody__firstfit"></tbody>
+      </table>
+      <table class="styled-table hidden best-fit__table">
+        <caption>
+          Best Fit Algorithm
+        </caption>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Block Size</th>
+            <th>Job Size</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody class="tbody__bestfit"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
